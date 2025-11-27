@@ -35,7 +35,7 @@ async def launch_evaluation():
     task_config = {
         "env": "retail",
         "user_strategy": "llm",
-        "user_model": "openai/gpt-4o",
+        "user_model": "openai/gpt-5-mini",
         "user_provider": "openai",
         "task_split": "test",
         "task_ids": [1],

@@ -54,9 +54,8 @@ class GeneralWhiteAgentExecutor(AgentExecutor):
         )
         response = completion(
             messages=messages,
-            model="openai/gpt-4o",
+            model="openai/gpt-5-mini",
             custom_llm_provider="openai",
-            temperature=0.0,
         )
         next_message = response.choices[0].message.model_dump()  # type: ignore
         messages.append(
